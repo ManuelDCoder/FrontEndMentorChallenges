@@ -1,0 +1,92 @@
+body {
+    max-width: 1440px;
+    /* max-height: 100vh; */
+}
+
+#column-card {
+    height: 100vh;
+}
+
+#pages {
+    width: 67%;
+    height: 74%;
+}
+
+.cardSize {
+    width: 34%;
+    height: 100%;
+}
+
+
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+.cardFont {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;;
+}
+
+.infoFont {
+    color: white;
+    width: 92%;
+    font-size: 0.987rem;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+    margin-top: 66px !important;
+    padding: 13px 33px 13px 33px;
+    font-size: 0.987rem !important;
+    font-weight: 400 !important;
+    font-family: 'Lexend Deca', sans-serif !important;
+    color: hsl(31, 77%, 52%);
+    background-color: white;
+    border: none;
+    border-radius: 25px !important;
+}
+
+.margin {
+    /* margin-top: px !important; */
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+
+/* custom style guide */
+
+/* 
+width 155  heigth 251 
+
+padding top 25px
+padding bottom 21px
+paddin left 25px
+
+line height 6px
+
+
+button padding top 43px
+button padding bottom 25px
+
+
+
+
+
+*/

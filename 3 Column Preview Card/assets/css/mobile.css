@@ -1,0 +1,59 @@
+@media screen and (max-width: 500px) {
+
+    body {
+        /* min-width: 1000px; */
+    }
+
+    #column-card {
+        /* border: 1px solid black; */
+        width: 500px;
+        height: 250vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pages {
+        /* border: 1px solid blue; */
+        width: 375px;
+        height: 95%;
+        display: block !important;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #sedans {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0px;
+        padding-left: 3rem !important;
+        width: fit-content;
+        height: auto;
+        /* height: 18%; */
+    }
+
+    .infoFont {
+        font-size: 1rem;
+        width: 75% !important;
+}
+
+    #suv {
+        padding-left: 3rem !important;
+        width: fit-content;
+        height: auto;
+        /* height: 18%; */
+    }
+
+    #luxury {
+        border-bottom-right-radius: 5px !important;
+        border-bottom-left-radius: 5px !important;
+        border-top-right-radius: 0px !important;
+        padding-left: 3rem !important;
+        width: fit-content;
+        height: auto;
+        /* height: 18%; */
+    }
+
+
+}
