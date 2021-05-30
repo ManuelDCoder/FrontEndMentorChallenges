@@ -55,5 +55,8 @@
         /* height: 18%; */
     }
 
+button {
+    margin-top: 1rem !important;
+}
 
 }
