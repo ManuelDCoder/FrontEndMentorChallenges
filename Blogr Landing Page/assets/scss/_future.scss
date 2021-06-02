@@ -1,0 +1,30 @@
+#future {
+    height: 120vh;
+    background-image: url(../bg-images/illustration-editor-desktop.svg);
+    background-position: 144% 0%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    overflow: hidden;
+    font-family: 'overpass';
+
+
+        .future-title {
+            font-size: 2.3rem;
+            font-weight: 600;
+        }
+
+        .future-info {
+            width: 50%;
+            height: 54%;
+
+            h4 {
+                font-weight: 600;
+            }
+
+            p {
+                width: 85%;
+                font-size: .94rem;
+            }
+        }
+
+}

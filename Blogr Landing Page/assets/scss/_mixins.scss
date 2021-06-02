@@ -1,0 +1,362 @@
+@mixin desktop {
+
+    @media (min-width: $desktopScreen) and (max-width: 1200px){ 
+       
+        #hero {
+            height: 70vh !important;
+            border-bottom-left-radius: 70px;
+
+
+            .hero {
+                height: 100%;
+                padding-top: 1rem !important;
+                padding-bottom: 1rem !important;
+
+                .logo {
+            
+                    img {
+                        height: 90%;
+                    
+                    }
+        
+                }
+
+                .hamburger {
+                    display: none;
+                }
+               
+                .nav-title {
+                //    background-color: black !important;
+                   margin-right: 15% !important;
+                   font-size: 100% !important;
+                //    margin: 1rem;
+        
+                   a {
+                       margin: 1rem !important;
+                   }
+               }
+        
+               .nav-bar .buttons input {
+                //    padding: !important;
+                   font-size: 89.25%;
+                   height: 100%;
+               }
+        
+               .hero-info {
+
+                    padding-top: 1rem !important;
+                    padding-bottom: 1rem !important;
+        
+                    h1 {
+                        font-size: 3rem !important;
+                        margin-bottom: 1rem !important;
+                    }
+        
+                    h6 {
+                        font-size: .85rem !important;
+                        margin-bottom: 1rem;
+                    }
+        
+                    input {
+                        padding: .3rem .5rem !important;
+                        font-size: 90% !important;
+                        height: 100%;
+                    }
+               }
+        
+
+            }
+        }
+
+    }
+    
+}
+
+@mixin tabletLarge {
+    @media (min-width: $tabletScreenLarge) and (max-width: $desktopScreen - 4px){ 
+       
+        #hero {
+            // display: none !important;
+            height: 60vh !important;
+            border-bottom-left-radius: 60px;
+
+
+            .hero {
+                height: 100%;
+                padding-top: 1rem !important;
+                padding-bottom: 1rem !important;
+
+                .nav-bar {
+
+                    display: flex !important;
+                    justify-content: space-between !important;
+
+                    .logo {
+                
+                        img {
+                            height: 80%;
+                        
+                        }
+            
+                    }
+    
+                    .hamburger {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center !important;
+                        width: 7%;
+                        height: 80%;
+    
+                        div{
+                            background-color: white;
+                            margin-bottom: 5px;
+                            width: 87% !important;
+                            height: 3px !important;
+                        }
+                    }
+                   
+                    .nav-title {
+                        display: none;
+                   }
+            
+                    .buttons {
+                       display: none;
+                   }
+            
+                }
+
+
+
+               .hero-info {
+                   
+                    padding-top: 1rem !important;
+                    padding-bottom: 1rem !important;
+        
+                    h1 {
+                        // display: none;
+                        width: 64%;
+                        text-align: center;
+                        font-size: 2rem !important;
+                        margin-bottom: .5rem !important;
+                    }
+        
+                    h6 {
+                        // display: one;
+                        font-size: .8rem !important;
+                        margin-bottom: .5rem !important;
+                    }
+        
+                    input {
+                        // display: none;
+                        padding: .2rem !important;
+                        font-size: 83% !important;
+                        height: 100%;
+                    }
+               }
+        
+
+            }
+        }
+
+    }
+}
+
+@mixin phoneLarge {
+    @media (min-width: $mobileScreenLarge ) and (max-width: $tabletScreenLarge - 4px){ 
+       
+        #hero {
+            height: 80vh !important;
+            border-bottom-left-radius: 60px;
+
+
+            .hero {
+                height: 100%;
+                padding-top: 1rem !important;
+                padding-bottom: 1rem !important;
+                background-size: 200% !important;
+                background-position: bottom !important;
+            
+
+                .nav-bar {
+
+                    display: flex !important;
+                    justify-content: space-between !important;
+                    .logo {
+                
+                        img {
+                            height: 60%;
+                        
+                        }
+            
+                    }
+    
+                    .hamburger {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center !important;
+                        width: 7%;
+                        height: 80%;
+    
+                        div{
+                            background-color: white;
+                            margin-bottom: 5px;
+                            width: 87% !important;
+                            height: 2px !important;
+                        }
+                    }
+                   
+                    .nav-title {
+                        display: none;
+                   }
+            
+                    .buttons {
+                       display: none;
+                   }
+            
+                }
+
+
+
+               .hero-info {
+                   
+                    padding-top: 1rem !important;
+                    padding-bottom: 1rem !important;
+        
+                    h1 {
+                        // display: none;
+                        width: 64%;
+                        text-align: center;
+                        font-size: 1.5rem !important;
+                        margin-bottom: .8rem !important;
+                    }
+        
+                    h6 {
+                        // display: one;
+                        font-size: .65rem !important;
+                        margin-bottom: .8rem !important;
+                    }
+        
+                    .buttons {
+                        display: flex;
+                        flex-direction: column;  
+                        margin-top: 3px;
+
+                        input {
+                            margin-bottom: 3px;
+                            padding: .3rem .3rem !important;
+                            font-size: 60% !important;
+                            height: 100%;
+                        }
+                    }
+                    
+                    
+               }
+        
+
+            }
+        }
+
+    }
+    
+}
+
+@mixin phoneSmall {
+    @media (min-width: $mobileScreenSmall ) and (max-width: $mobileScreenLarge){ 
+       
+        #hero {
+            height: 60vh !important;
+            border-bottom-left-radius: 60px;
+
+
+            .hero {
+                height: 100%;
+                padding-top: 1rem !important;
+                padding-bottom: 1rem !important;
+
+                .nav-bar {
+
+                    display: flex !important;
+                    justify-content: space-between !important;
+                    .logo {
+                
+                        img {
+                            height: 80%;
+                        
+                        }
+            
+                    }
+    
+                    .hamburger {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center !important;
+                        width: 7%;
+                        height: 80%;
+    
+                        div{
+                            background-color: white;
+                            margin-bottom: 5px;
+                            width: 87% !important;
+                            height: 2px !important;
+                        }
+                    }
+                   
+                    .nav-title {
+                        display: none;
+                   }
+            
+                    .buttons {
+                       display: none;
+                   }
+            
+                }
+
+
+
+               .hero-info {
+                   
+                    padding-top: 1rem !important;
+                    padding-bottom: 1rem !important;
+        
+                    h1 {
+                        // display: none;
+                        width: 70%;
+                        text-align: center;
+                        font-size: 1.2rem !important;
+                        margin-bottom: .8rem !important;
+                    }
+        
+                    h6 {
+                        // display: one;
+                        width: 70%;
+                        text-align: center;
+                        font-size: .7rem !important;
+                        margin-bottom: .8rem !important;
+                    }
+        
+                    .buttons {
+                        display: flex;
+                        flex-direction: column;  
+                        margin-top: 3px;
+                        
+                        input {
+                            margin-bottom: 3px;
+                            padding: .3rem .3rem !important;
+                            font-size: 70% !important;
+                            height: 100%;
+                        }
+                    }
+                    
+                    
+               }
+        
+
+            }
+        }
+
+    }
+    
+}

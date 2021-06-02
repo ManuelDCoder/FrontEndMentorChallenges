@@ -1,0 +1,29 @@
+.blog {
+    height: 120vh;
+    background-image: url(../bg-images/illustration-laptop-desktop.svg);
+    background-position: -76% 0%;
+    background-repeat: no-repeat;
+    background-size: 73%;
+    overflow: hidden;
+    font-family: 'overpass';
+    margin-top: 9rem;
+
+        .blog-info {
+            height: 58%;
+            width: 50%;
+            float: right;
+            position: relative;
+            top: 23.3%;
+
+
+            h4{
+                font-weight: 600;
+            }
+
+            p {
+                width: 94%;
+                font-size: .94rem;
+                line-height: 1.5rem;
+            }
+        }
+}

@@ -1,0 +1,37 @@
+.art {
+    height: 50vh;
+    background-image:linear-gradient(to right , $verydarkblackBlue, $verydarkgrayBlue ) ;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+
+        .art-content {
+            height: 100%;
+            background-image: url(../bg-images/bg-pattern-circles.svg);
+            background-size: 69%;
+            background-repeat: no-repeat;
+            background-position: -48% 82%;
+
+            img {
+                height: 145%;
+                top: -18%;
+                position: relative;
+            }
+
+            .art-info {
+                width: 50%;
+                color: $white;
+                font-family: 'overpass';
+
+
+                h2{
+                    font-weight: 500;
+                }
+
+                p {
+                    width: 87%;
+                    font-size: .94rem;
+                    line-height: 1.5rem;    
+                }
+            }
+        }
+}

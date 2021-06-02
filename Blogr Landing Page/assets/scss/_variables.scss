@@ -1,9 +1,16 @@
 // Screen Sizes
     // Mobile
-        $mobileScreen: 375px;
+        $mobileScreenLarge: 425px;
+        $mobileScreenMedium: 375px;
+        $mobileScreenSmall: 320px;
+
+    // Tablet
+        $tabletScreenLarge: 768px;
+        $tabletScreen: 600px;
     
     // Desktop
-        $desktopScreen: 1440px;
+        $desktopScreenLarge: 1440px;
+        $desktopScreen: 1024px;
 
 // Screen Sizes End
 
