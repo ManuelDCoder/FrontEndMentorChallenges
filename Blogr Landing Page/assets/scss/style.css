@@ -80,11 +80,13 @@ body {
 
 @media (min-width: 768px) and (max-width: 1020px) {
   #hero {
-    height: 60vh !important;
-    border-bottom-left-radius: 60px;
+    height: 70vh !important;
+    border-bottom-left-radius: 70px;
   }
   #hero .hero {
     height: 100%;
+    background-position: 31% !important;
+    background-size: 237% !important;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
@@ -98,6 +100,12 @@ body {
   }
   #hero .hero .nav-bar .logo img {
     height: 80%;
+  }
+  #hero .hero .nav-bar .nav-title {
+    display: none;
+  }
+  #hero .hero .nav-bar .buttons {
+    display: none !important;
   }
   #hero .hero .nav-bar .hamburger {
     display: -webkit-box;
@@ -122,28 +130,19 @@ body {
     width: 87% !important;
     height: 3px !important;
   }
-  #hero .hero .nav-bar .nav-title {
-    display: none;
-  }
-  #hero .hero .nav-bar .buttons {
-    display: none;
-  }
   #hero .hero .hero-info {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    margin: 0;
   }
   #hero .hero .hero-info h1 {
     width: 64%;
     text-align: center;
     font-size: 2rem !important;
-    margin-bottom: .5rem !important;
   }
   #hero .hero .hero-info h6 {
     font-size: .8rem !important;
-    margin-bottom: .5rem !important;
   }
-  #hero .hero .hero-info input {
-    padding: .2rem !important;
+  #hero .hero .hero-info .buttons input {
+    padding: .5rem .9rem !important;
     font-size: 83% !important;
     height: 100%;
   }
@@ -155,11 +154,11 @@ body {
     border-bottom-left-radius: 60px;
   }
   #hero .hero {
-    height: 100%;
+    height: 100% !important;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
-    background-size: 200% !important;
-    background-position: bottom !important;
+    background-size: 260% !important;
+    background-position: 30% 42% !important;
   }
   #hero .hero .nav-bar {
     display: -webkit-box !important;
@@ -168,9 +167,10 @@ body {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
+    margin-bottom: 40px;
   }
   #hero .hero .nav-bar .logo img {
-    height: 60%;
+    height: 75%;
   }
   #hero .hero .nav-bar .hamburger {
     display: -webkit-box;
@@ -199,51 +199,49 @@ body {
     display: none;
   }
   #hero .hero .nav-bar .buttons {
-    display: none;
+    display: none !important;
   }
   #hero .hero .hero-info {
-    padding-top: 1rem !important;
+    margin: 0 !important;
     padding-bottom: 1rem !important;
   }
   #hero .hero .hero-info h1 {
-    width: 64%;
+    width: 101%;
     text-align: center;
-    font-size: 1.5rem !important;
+    font-size: 2.3rem !important;
     margin-bottom: .8rem !important;
   }
   #hero .hero .hero-info h6 {
-    font-size: .65rem !important;
+    width: 80%;
+    text-align: center;
+    font-size: 1rem !important;
     margin-bottom: .8rem !important;
   }
   #hero .hero .hero-info .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 3px;
+    margin-top: 10px;
   }
   #hero .hero .hero-info .buttons input {
     margin-bottom: 3px;
-    padding: .3rem .3rem !important;
-    font-size: 60% !important;
+    padding: .4rem .9rem !important;
+    font-size: .8rem !important;
     height: 100%;
   }
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 421px) {
   #hero {
-    height: 60vh !important;
+    height: 90vh !important;
     border-bottom-left-radius: 60px;
   }
   #hero .hero {
-    height: 100%;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    height: 100% !important;
+    background-size: 345% !important;
+    background-position: 35% 35% !important;
   }
-  #hero .hero .nav-bar {
+  #hero .hero .nav-container .nav-bar {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -251,10 +249,10 @@ body {
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
   }
-  #hero .hero .nav-bar .logo img {
+  #hero .hero .nav-container .nav-bar .logo img {
     height: 80%;
   }
-  #hero .hero .nav-bar .hamburger {
+  #hero .hero .nav-container .nav-bar .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -268,38 +266,54 @@ body {
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
-    width: 7%;
+    width: 10%;
     height: 80%;
   }
-  #hero .hero .nav-bar .hamburger div {
+  #hero .hero .nav-container .nav-bar .hamburger div {
     background-color: white;
     margin-bottom: 5px;
     width: 87% !important;
     height: 2px !important;
   }
-  #hero .hero .nav-bar .nav-title {
+  #hero .hero .nav-container .nav-bar .nav-title {
     display: none;
   }
-  #hero .hero .nav-bar .buttons {
-    display: none;
+  #hero .hero .nav-container .nav-bar .buttons {
+    display: none !important;
   }
   #hero .hero .hero-info {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
   #hero .hero .hero-info h1 {
-    width: 70%;
+    width: 100%;
+    line-height: 2.5rem;
     text-align: center;
-    font-size: 1.2rem !important;
+    font-size: 1.68rem !important;
     margin-bottom: .8rem !important;
   }
   #hero .hero .hero-info h6 {
-    width: 70%;
+    width: 100%;
+    line-height: 1.5rem;
     text-align: center;
-    font-size: .7rem !important;
+    font-size: .875rem !important;
     margin-bottom: .8rem !important;
   }
   #hero .hero .hero-info .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 21px;
+  }
+  #hero .hero .hero-info .buttons input {
+    margin-bottom: 3px;
+    padding: .4rem .8rem !important;
+    font-size: .95rem !important;
+    height: 100%;
+    font-weight: 600 !important;
+  }
+  #future {
+    height: 250vh !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -307,13 +321,107 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 3px;
+    padding: 1rem;
+    background-image: url(../bg-images/illustration-editor-mobile.svg) !important;
+    background-position: 0 17% !important;
+    background-size: 100% !important;
   }
-  #hero .hero .hero-info .buttons input {
-    margin-bottom: 3px;
-    padding: .3rem .3rem !important;
-    font-size: 70% !important;
-    height: 100%;
+  #future .future-title {
+    font-size: 1.6rem !important;
+  }
+  #future .future-info {
+    width: 100% !important;
+    height: 50% !important;
+    margin-top: 20rem !important;
+  }
+  #future .future-info h4 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  #future .future-info p {
+    width: 100% !important;
+    font-size: .9rem !important;
+    display: block;
+    text-align: center;
+  }
+  .art {
+    height: 110vh !important;
+  }
+  .art .art-content {
+    background-size: 161% !important;
+    background-position: center -12rem !important;
+    padding: 1rem !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .art .art-content img {
+    width: 123% !important;
+    left: -11%;
+    top: -33% !important;
+  }
+  .art .art-content .art-info {
+    position: relative;
+    width: 100% !important;
+    top: -35%;
+    padding: 0;
+    text-align: center;
+  }
+  .art .art-content .art-info h2 {
+    font-size: 2rem;
+  }
+  .art .art-content .art-info p {
+    width: 100% !important;
+    font-size: .9rem !important;
+  }
+  .blog {
+    height: 160vh !important;
+    padding: 1rem !important;
+    margin: 15% 0 !important;
+    background-image: url(../bg-images/illustration-laptop-mobile.svg) !important;
+    background-size: 100% !important;
+  }
+  .blog .blog-info {
+    width: 100% !important;
+    height: 75% !important;
+    text-align: center;
+    padding: 3rem 0 !important;
+  }
+  .blog .blog-info p {
+    margin-bottom: 0 !important;
+    width: 101% !important;
+    font-size: .9rem !important;
+  }
+  .footer {
+    height: 150vh !important;
+    margin-top: 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem !important;
+    text-align: center !important;
+  }
+  .footer img {
+    width: 33% !important;
+    height: 5% !important;
+    -webkit-transform: translate(86px, 0px);
+            transform: translate(86px, 0px);
+  }
+  .footer .links {
+    width: 100% !important;
+    padding: 1rem !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .links div {
+    margin-bottom: 1rem !important;
+  }
+  .footer .links div li {
+    font-size: .9rem !important;
   }
 }
 
@@ -352,10 +460,6 @@ body {
 
 #hero .hero .nav-container .nav-bar .me-6 {
   margin-right: 25%;
-}
-
-#hero .hero .nav-container .nav-bar .hamburger {
-  display: none;
 }
 
 #hero .hero .nav-container .nav-bar .nav-title {
@@ -455,6 +559,7 @@ body {
 #future .future-info {
   width: 50%;
   height: 54%;
+  overflow: hidden;
 }
 
 #future .future-info h4 {
@@ -561,6 +666,7 @@ body {
 
 .footer .links a {
   text-decoration: none;
+  text-transform: capitalize;
   color: white;
 }
 
@@ -574,6 +680,6 @@ body {
 .footer .links a li:hover {
   -webkit-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
-  border-bottom: 1px solid white;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

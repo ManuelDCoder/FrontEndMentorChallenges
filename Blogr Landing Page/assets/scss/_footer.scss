@@ -23,6 +23,7 @@
             
             a {
                 text-decoration: none;
+                text-transform: capitalize;
                 color: $white;
 
                 li  {
@@ -33,7 +34,8 @@
                     
                     &:hover {
                         transition: ease-in-out .5s;
-                        border-bottom: 1px solid white;
+                        text-decoration: underline;
+                        // border-bottom: 1px solid white;
                     
                     }
                 }

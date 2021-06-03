@@ -72,17 +72,19 @@
     
 }
 
-@mixin tabletLarge {
-    @media (min-width: $tabletScreenLarge) and (max-width: $desktopScreen - 4px){ 
+@mixin tablet {
+    @media (min-width: $tabletScreenLarge) and (max-width: 1020px){ 
        
         #hero {
             // display: none !important;
-            height: 60vh !important;
-            border-bottom-left-radius: 60px;
+            height: 70vh !important;
+            border-bottom-left-radius: 70px;
 
 
             .hero {
                 height: 100%;
+                background-position: 31% !important;
+                background-size: 237% !important;
                 padding-top: 1rem !important;
                 padding-bottom: 1rem !important;
 
@@ -99,7 +101,15 @@
                         }
             
                     }
-    
+
+                    .nav-title {
+                        display: none;
+                   }
+
+                   .buttons {
+                        display: none !important;
+                    }
+
                     .hamburger {
                         display: flex;
                         flex-direction: column;
@@ -116,13 +126,6 @@
                         }
                     }
                    
-                    .nav-title {
-                        display: none;
-                   }
-            
-                    .buttons {
-                       display: none;
-                   }
             
                 }
 
@@ -130,28 +133,31 @@
 
                .hero-info {
                    
-                    padding-top: 1rem !important;
-                    padding-bottom: 1rem !important;
+                    margin: 0;
         
                     h1 {
                         // display: none;
                         width: 64%;
                         text-align: center;
                         font-size: 2rem !important;
-                        margin-bottom: .5rem !important;
                     }
         
                     h6 {
                         // display: one;
                         font-size: .8rem !important;
-                        margin-bottom: .5rem !important;
                     }
         
-                    input {
-                        // display: none;
-                        padding: .2rem !important;
-                        font-size: 83% !important;
-                        height: 100%;
+                    .buttons {
+                        // display: flex;
+                        // justify-content: center;
+
+                        input {
+                            // display: none;
+                            padding: .5rem .9rem !important;
+                            // margin-right: 1rem;
+                            font-size: 83% !important;
+                            height: 100%;
+                        }
                     }
                }
         
@@ -171,27 +177,30 @@
 
 
             .hero {
-                height: 100%;
+                height: 100% !important;
                 padding-top: 1rem !important;
                 padding-bottom: 1rem !important;
-                background-size: 200% !important;
-                background-position: bottom !important;
+                background-size: 260% !important;
+                background-position: 30% 42% !important;
             
 
                 .nav-bar {
 
                     display: flex !important;
                     justify-content: space-between !important;
+                    margin-bottom: 40px;
+                    
                     .logo {
                 
                         img {
-                            height: 60%;
+                            height: 75%;
                         
                         }
             
                     }
     
                     .hamburger {
+                        // display: none !important;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -212,7 +221,7 @@
                    }
             
                     .buttons {
-                       display: none;
+                       display: none !important;
                    }
             
                 }
@@ -220,33 +229,36 @@
 
 
                .hero-info {
-                   
-                    padding-top: 1rem !important;
-                    padding-bottom: 1rem !important;
+                //    display: none !important;
+                margin: 0 !important;
+                padding-bottom: 1rem !important;
+                    
         
                     h1 {
                         // display: none;
-                        width: 64%;
+                        width: 101%;
                         text-align: center;
-                        font-size: 1.5rem !important;
+                        font-size: 2.3rem !important;
                         margin-bottom: .8rem !important;
                     }
         
                     h6 {
-                        // display: one;
-                        font-size: .65rem !important;
+                        // display: none !important;
+                        width: 80%;
+                        text-align: center;
+                        font-size: 1rem !important;
                         margin-bottom: .8rem !important;
                     }
         
                     .buttons {
+                        // display: none !important;
                         display: flex;
-                        flex-direction: column;  
-                        margin-top: 3px;
+                        margin-top: 10px;
 
                         input {
                             margin-bottom: 3px;
-                            padding: .3rem .3rem !important;
-                            font-size: 60% !important;
+                            padding: .4rem .9rem !important;
+                            font-size: .8rem !important;
                             height: 100%;
                         }
                     }
@@ -263,55 +275,60 @@
 }
 
 @mixin phoneSmall {
-    @media (min-width: $mobileScreenSmall ) and (max-width: $mobileScreenLarge){ 
+    @media (min-width: $mobileScreenSmall ) and (max-width: $mobileScreenLarge - 4px){ 
        
         #hero {
-            height: 60vh !important;
+            height: 90vh !important;
             border-bottom-left-radius: 60px;
 
 
             .hero {
-                height: 100%;
-                padding-top: 1rem !important;
-                padding-bottom: 1rem !important;
+                height: 100% !important;
+                background-size: 345% !important;
+                background-position: 35% 35% !important;
 
-                .nav-bar {
+                .nav-container {
 
-                    display: flex !important;
-                    justify-content: space-between !important;
-                    .logo {
+                    // padding-top: 1.5rem;
+
+                    .nav-bar {
+
+                        display: flex !important;
+                        justify-content: space-between !important;
+                        .logo {
+                    
+                            img {
+                                height: 80%;
+                            
+                            }
                 
-                        img {
+                        }
+        
+                        .hamburger {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center !important;
+                            width: 10%;
                             height: 80%;
-                        
+        
+                            div{
+                                background-color: white;
+                                margin-bottom: 5px;
+                                width: 87% !important;
+                                height: 2px !important;
+                            }
                         }
-            
+                       
+                        .nav-title {
+                            display: none;
+                       }
+                
+                        .buttons {
+                           display: none !important;
+                       }
+                
                     }
-    
-                    .hamburger {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center !important;
-                        width: 7%;
-                        height: 80%;
-    
-                        div{
-                            background-color: white;
-                            margin-bottom: 5px;
-                            width: 87% !important;
-                            height: 2px !important;
-                        }
-                    }
-                   
-                    .nav-title {
-                        display: none;
-                   }
-            
-                    .buttons {
-                       display: none;
-                   }
-            
                 }
 
 
@@ -323,30 +340,32 @@
         
                     h1 {
                         // display: none;
-                        width: 70%;
+                        width: 100%;
+                        line-height: 2.5rem;
                         text-align: center;
-                        font-size: 1.2rem !important;
+                        font-size: 1.68rem !important;
                         margin-bottom: .8rem !important;
                     }
         
                     h6 {
                         // display: one;
-                        width: 70%;
+                        width: 100%;
+                        line-height: 1.5rem;
                         text-align: center;
-                        font-size: .7rem !important;
+                        font-size: .875rem !important;
                         margin-bottom: .8rem !important;
                     }
         
                     .buttons {
                         display: flex;
-                        flex-direction: column;  
-                        margin-top: 3px;
+                        margin-top: 21px;
                         
                         input {
                             margin-bottom: 3px;
-                            padding: .3rem .3rem !important;
-                            font-size: 70% !important;
+                            padding: .4rem .8rem !important;
+                            font-size: .95rem !important;
                             height: 100%;
+                            font-weight: 600 !important;
                         }
                     }
                     
@@ -357,6 +376,138 @@
             }
         }
 
+        #future {
+            // border: 1px/ solid black;
+            height: 250vh !important;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            background-image: url(../bg-images/illustration-editor-mobile.svg) !important;
+            background-position: 0 17% !important;
+            background-size: 100% !important;
+
+                .future-title {
+                    font-size: 1.6rem !important;
+                }
+
+                .future-info {
+                    // border: 1px solid black;
+                    width: 100% !important;
+                    height: 50% !important;
+                    margin-top: 20rem !important;
+
+                    h4 {
+                        text-align: center;
+                        font-size: 1.6rem;
+                    }
+
+                    p {
+                        width: 100% !important;
+                        font-size: .9rem !important;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+        }
+
+        .art {
+            // display: none;
+            height: 110vh !important;
+
+                
+                .art-content {
+                    background-size: 161% !important;
+                    background-position: center -12rem !important;
+                    padding: 1rem !important;
+                    flex-direction: column;
+                    // border: 1px solid black;
+
+                    img {
+                        // display: none;
+                        width: 123% !important;
+                        left: -11%;
+                        top: -33% !important;
+                    }
+    
+                    .art-info {
+                        position: relative;
+                        width: 100% !important;
+                        top: -35%;
+                        padding: 0;
+                        text-align: center;
+
+                        h2 {
+                            font-size: 2rem;
+                            // text-align: center;
+                        }
+
+                        p {
+                            width: 100% !important;
+                            font-size: .9rem !important;
+                            // text-align: center;
+                        }
+                    }
+                }
+        }
+
+        .blog {
+            // display: none;
+            // border: 1px solid black;
+            height: 160vh !important;
+            padding: 1rem !important;
+            margin: 15% 0 !important;
+            background-image: url(../bg-images/illustration-laptop-mobile.svg) !important;
+            background-size: 100% !important;
+
+                .blog-info {
+                    // border: 1px solid black;
+                    width: 100% !important;
+                    height: 75% !important;
+                    text-align: center;
+                    padding: 3rem 0 !important;
+
+                    p {
+                        margin-bottom: 0 !important;
+                        width: 101% !important;
+                        font-size: .9rem !important;
+                    }
+
+                }
+
+        }
+
+        .footer {
+            // display: none !important;
+            height: 150vh !important;
+            margin-top: 0 !important;
+            flex-direction: column;
+            padding: 1rem !important;
+            text-align: center !important;
+
+                img {
+                    width: 33% !important;
+                    height: 5% !important; 
+                    transform: translate(86px, 0px);   
+                             }           
+                .links {
+                    // border: 1px solid white;
+                    width: 100% !important;
+                    padding: 1rem !important;
+                    flex-direction: column;
+                    
+                    div {
+                        margin-bottom: 1rem !important;
+
+                        li {
+                            font-size: .9rem !important;
+                        }
+                    }
+                }
+
+        }
+
     }
+
+
     
 }
