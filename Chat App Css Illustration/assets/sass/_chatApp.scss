@@ -1,0 +1,350 @@
+.mid {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    // padding: 1rem;
+    justify-content: space-between;
+    position: absolute;
+    // border: 1px solid black;
+
+        .chat-app {
+            // border: 1px solid black;
+            width: 50%;
+            height: 100%;
+            
+
+                .app {
+                    width: 50%;
+                    height: 100%;
+                    margin-left: 12rem;
+                    border-radius: 30px;
+                    padding: .7rem;
+                    transform: translateX();
+                    // border:  1px solid black;
+                    background-color: white;
+                    box-shadow: -10px 44px 100px -35px #ad6ecd;
+                
+                
+                        .content {
+                            // border: 1px solid black;
+                            height: 100%;
+                            border-radius: 20px;
+                            background-color: #f1f1f1;
+                            overflow: hidden;
+                            // overflow-y: scroll;
+                            // scrollbar-color: black;
+
+                                .header {
+                                    // border: 1px solid black;
+                                    height: 15%;
+                                    position: static;
+                                    background-image: linear-gradient(to right, blue -78%, violet 100%);
+                                    border-bottom-right-radius: 5px;
+                                    border-bottom-left-radius: 5px;
+                                    overflow: hidden;
+
+
+                                        .notch {
+                                            height: 30%;
+                                            width: 50%;
+                                            border-bottom-left-radius: 15px;
+                                            border-bottom-right-radius: 15px;
+                                            transform: translateX(50%);
+                                            background-color: #fff;
+                                            box-shadow: 0px 1px 5px -2px;
+                                        }
+
+                                        .info {
+                                            // border: 1px solid black;
+                                            height: 70%;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            padding: .2rem .5rem;
+
+
+                                                .back-icon {
+                                                    // border: 1px solid black;
+                                                    width: 8%;
+                                                    height: 100%;
+                                                    overflow: hidden;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    // background-color: white;
+
+                                                        div {
+                                                            width: 10%;
+                                                            height: 18%;
+                                                            border-radius: 10px;
+                                                            background-color: white;
+
+                                                                &:first-child {
+                                                                    transform: rotate(45deg);
+                                                                    transform-origin: -1px;
+                                                                }
+
+                                                                &:last-child {
+                                                                    transform: rotate(-45deg);
+                                                                    transform-origin: -2px;
+                                                                }
+                                                        }
+                                                    
+                                                }
+
+                                                .profile {
+                                                    // border: 1px solid black;
+                                                    width: 14%;
+                                                    height: 75%;
+                                                    border-radius: 50%;
+                                                    padding: .06rem;
+                                                    background-color: white;
+                                                    overflow: hidden;
+
+                                                    
+
+                                                        .profile-img {
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            border-radius: 50%;
+                                                            background-image: url(../Zenistu.jpg);
+                                                            background-size: cover;
+                                                            overflow: hidden;
+
+                                                        }
+                                                }
+
+                                                .name-tag {
+                                                    // border: 1px solid black;
+                                                    width: 50%;
+                                                    height: 100%;
+                                                    // font-family: 'overpass';
+                                                    overflow: hidden;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    color: #e7e7e7;
+                                                    line-height: .9rem;
+                                                    margin-right: 1rem;
+
+                                                        h3 {
+                                                            font-size: .85rem;
+                                                        }
+
+                                                        p {
+                                                            font-size: .65rem;
+                                                            color: violet;
+                                                        }
+                                                }
+
+                                                .menu {
+                                                    // border: 1px solid black;
+                                                    width: 10%;
+                                                    height: 100%;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    cursor: pointer;
+
+                                                        div {
+                                                            width: 14%;
+                                                            height: 6%;
+                                                            margin-top: 3px;
+                                                            background-color: white;
+                                                            border-radius: 50%;
+                                                            // margin: .rem;
+                                                        }
+                                                }
+                                        }
+
+                                }
+
+                                .message-box {
+                                    // border: 1px solid black;
+                                    height: 86%;
+                                    display: block;
+                                    padding: .5rem .5rem;
+                                    overflow-y: scroll;
+                                    overflow-x: hidden;
+                                    font-size: .6rem;
+
+                                        // :first-child, :nth-child(2) {
+                                        //     // margin-bottom: .4rem;
+                                        // }
+
+                                        
+                                        .message1 {
+                                            // border: 1px solid red;
+                                            width: 70%;
+                                            height: 22%;
+                                            padding: .2rem;
+
+                                                div {
+                                                    // border: 1px solid black;
+                                                    height: 40%;
+                                                    padding: .2rem;
+                                                    border-top-left-radius: 5px;
+                                                    border-top-right-radius: 5px;
+                                                    border-bottom-right-radius: 5px;
+                                                    background-color: #9241c826;
+                                                    color: #ad6ecd;
+                                                    box-shadow: 2px 4px 15px -14px;
+
+
+                                                    &:first-child {
+                                                        margin-bottom: .5rem;
+                                                    }
+                                                }
+
+                                               
+                                        }
+
+                                        .message2 {
+                                            // border: 1px solid red;
+                                            width: 70%;
+                                            height: 30%;
+                                            transform: translateX(69px);
+                                            // overflow: hidden;
+
+                                                div {
+                                                    // border: 1px solid black;
+                                                    height: 40%;
+                                                    margin-bottom: .5rem; 
+                                                    padding: .2rem;
+                                                    border-top-left-radius: 5px;
+                                                    border-top-right-radius: 5px;
+                                                    border-bottom-left-radius: 5px;
+                                                    background-color: white;
+                                                    box-shadow: 2px 4px 15px -14px;
+
+                                                        
+                                                        &:first-child {
+                                                            overflow: hidden;
+                                                            display: flex;
+                                                            background-color: transparent;
+                                                            justify-content: space-between;
+
+                                                                img {
+                                                                    height: 100%;
+                                                                    border-radius: 10px;
+                                                                }
+                                                        }
+
+                                                        &:nth-child(2) {
+                                                            height: 25%;
+                                                           
+                                                        }
+
+                                                        &:last-child {
+                                                            height: 17%;
+                                                            width: 66%;
+                                                            transform: translateX(47px);
+                                                                
+                                                        }
+                                                }
+
+                                        }
+
+                                        .message3 {
+                                            // border: 1px solid red;
+                                            width: 80%;
+                                            height: 30%;
+                                            margin-top: .35rem;
+
+                                            div {
+                                                // border: 1px solid black;
+                                                height: 36%;
+                                                margin-bottom: .5rem; 
+                                                padding: .23rem;
+                                                border-top-left-radius: 5px;
+                                                border-top-right-radius: 5px;
+                                                border-bottom-right-radius: 5px;
+                                                background-color: #9241c826;
+                                                box-shadow: 2px 4px 15px -14px;
+                                                color: white;
+
+                                                    &:first-child {
+                                                        color: #ad6ecd;
+                                                        width: 85%;
+                                                    }
+
+                                                    &:nth-child(2), &:last-child {
+                                                        height: 25%;
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        align-items: center;
+                                                        background-image: linear-gradient(to right,  violet 15%, blue 118%);
+                                                        cursor: pointer;
+
+                                                            p {
+                                                                // width: 90%;
+                                                                display: flex;
+                                                                justify-content: space-between;
+                                                                
+
+                                                                    input {
+                                                                        margin-right: 10px;
+                                                                        
+                                                                            // &:checked {
+                                                                            //     background-color: yellow;
+                                                                            // }
+                                                                    }
+                                                            }
+
+                                                            
+                                                    }
+                                                    
+                                            }
+
+                                        }
+
+                                        .message-feild {
+                                            transform: translate(10% 10%);
+                                        }
+                            }
+
+
+                            .message-feild {
+                                position: relative;
+                                width: 100%;
+                                display: flex;
+                                // left: 20.5%;
+                                bottom: 10%;
+                                justify-content: center;
+                                // align-content: center;
+
+                                    input {
+                                        border-radius: 20px;
+                                        padding: 1rem;
+                                        border: none;
+                                        height: 35px;
+                                        width: 95%;
+                                    }
+                            }
+
+                        }
+            }
+        }
+
+        .app-info {
+            width: 50%;
+            height: 100%;
+            display: block;
+            padding-top: 12rem;
+            padding-left: 2rem;
+            // border: 1px solid black;
+            font-family: 'overpass';
+
+                p {
+                    width: 85%;
+                    margin-top: 1.5rem;
+                    padding: .5rem 0rem;
+                    line-height: 1.4rem;
+                }
+            
+        }
+}

@@ -264,17 +264,18 @@ body {
     left: 7%;
     position: fixed;
     border-radius: 5px;
-    -webkit-box-shadow: 0px 6px 20px 0px;
-            box-shadow: 0px 6px 20px 0px;
+    -webkit-box-shadow: 0px 11px 29px -15px;
+            box-shadow: 0px 11px 29px -15px;
     background-color: white;
     padding: 1rem;
-    z-index: 2;
-    opacity: 0;
+    overflow: scroll;
+    z-index: 1;
+    display: none !important;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
   #hero .hero .nav-container .mobile-menu.menu {
-    opacity: 1;
+    display: block !important;
   }
   #hero .hero .nav-container .mobile-menu .links {
     list-style: none;
@@ -287,13 +288,34 @@ body {
   #hero .hero .nav-container .mobile-menu .links a li {
     margin-bottom: 1rem;
   }
+  #hero .hero .nav-container .mobile-menu .links a li:hover {
+    text-decoration: underline;
+  }
+  #hero .hero .nav-container .mobile-menu .links .sub {
+    display: none !important;
+    width: 75%;
+    height: 71px;
+    border-radius: 5px;
+    background-color: #4b5862;
+    -webkit-transform: translate(27px, -13px);
+            transform: translate(27px, -13px);
+  }
+  #hero .hero .nav-container .mobile-menu .links .sub.addsub {
+    display: block !important;
+  }
+  #hero .hero .nav-container .mobile-menu .links .sub li {
+    margin: auto;
+    color: white;
+    font-size: .875rem;
+  }
   #hero .hero .nav-container .mobile-menu .buttons {
-    width: 100%;
+    width: 90%;
     height: 25%;
     margin-top: 9rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -308,7 +330,7 @@ body {
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 1rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .2rem;
   }
   #hero .hero .nav-container .mobile-menu .buttons input:hover {
     background-color: #ff7a85;
@@ -535,6 +557,52 @@ body {
   .footer .links div li {
     font-size: .9rem !important;
   }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 300ms ease-in forwards;
+          animation: fade-in 300ms ease-in forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 500ms ease-out backwards;
+          animation: fade-out 500ms ease-out backwards;
 }
 
 #hero {

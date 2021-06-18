@@ -1,0 +1,402 @@
+*, * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'overpass';
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+.main {
+  border: 1px solid black;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  font-family: 'overpass';
+}
+
+.left-bg {
+  width: 40%;
+  height: 95vh;
+  -webkit-transform: translateX(-120px);
+          transform: translateX(-120px);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(-76%, blue), color-stop(122%, violet));
+  background-image: linear-gradient(to right top, blue -76%, violet 122%);
+}
+
+.right-bg {
+  width: 40%;
+  height: 95vh;
+  opacity: .05;
+  -webkit-transform: translate(200%, -90%);
+          transform: translate(200%, -90%);
+  border-top-left-radius: 40%;
+  border-top-right-radius: 50%;
+  background-color: gray;
+}
+
+.mid {
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+}
+
+.mid .chat-app {
+  width: 50%;
+  height: 100%;
+}
+
+.mid .chat-app .app {
+  width: 50%;
+  height: 100%;
+  margin-left: 12rem;
+  border-radius: 30px;
+  padding: .7rem;
+  -webkit-transform: translateX();
+          transform: translateX();
+  background-color: white;
+  -webkit-box-shadow: -10px 44px 100px -35px #ad6ecd;
+          box-shadow: -10px 44px 100px -35px #ad6ecd;
+}
+
+.mid .chat-app .app .content {
+  height: 100%;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.mid .chat-app .app .content .header {
+  height: 15%;
+  position: static;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(-78%, blue), to(violet));
+  background-image: linear-gradient(to right, blue -78%, violet 100%);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+}
+
+.mid .chat-app .app .content .header .notch {
+  height: 30%;
+  width: 50%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 5px -2px;
+          box-shadow: 0px 1px 5px -2px;
+}
+
+.mid .chat-app .app .content .header .info {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .2rem .5rem;
+}
+
+.mid .chat-app .app .content .header .info .back-icon {
+  width: 8%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mid .chat-app .app .content .header .info .back-icon div {
+  width: 10%;
+  height: 18%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.mid .chat-app .app .content .header .info .back-icon div:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: -1px;
+          transform-origin: -1px;
+}
+
+.mid .chat-app .app .content .header .info .back-icon div:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: -2px;
+          transform-origin: -2px;
+}
+
+.mid .chat-app .app .content .header .info .profile {
+  width: 14%;
+  height: 75%;
+  border-radius: 50%;
+  padding: .06rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.mid .chat-app .app .content .header .info .profile .profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url(../Zenistu.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.mid .chat-app .app .content .header .info .name-tag {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #e7e7e7;
+  line-height: .9rem;
+  margin-right: 1rem;
+}
+
+.mid .chat-app .app .content .header .info .name-tag h3 {
+  font-size: .85rem;
+}
+
+.mid .chat-app .app .content .header .info .name-tag p {
+  font-size: .65rem;
+  color: violet;
+}
+
+.mid .chat-app .app .content .header .info .menu {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.mid .chat-app .app .content .header .info .menu div {
+  width: 14%;
+  height: 6%;
+  margin-top: 3px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.mid .chat-app .app .content .message-box {
+  height: 86%;
+  display: block;
+  padding: .5rem .5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: .6rem;
+}
+
+.mid .chat-app .app .content .message-box .message1 {
+  width: 70%;
+  height: 22%;
+  padding: .2rem;
+}
+
+.mid .chat-app .app .content .message-box .message1 div {
+  height: 40%;
+  padding: .2rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #9241c826;
+  color: #ad6ecd;
+  -webkit-box-shadow: 2px 4px 15px -14px;
+          box-shadow: 2px 4px 15px -14px;
+}
+
+.mid .chat-app .app .content .message-box .message1 div:first-child {
+  margin-bottom: .5rem;
+}
+
+.mid .chat-app .app .content .message-box .message2 {
+  width: 70%;
+  height: 30%;
+  -webkit-transform: translateX(69px);
+          transform: translateX(69px);
+}
+
+.mid .chat-app .app .content .message-box .message2 div {
+  height: 40%;
+  margin-bottom: .5rem;
+  padding: .2rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 2px 4px 15px -14px;
+          box-shadow: 2px 4px 15px -14px;
+}
+
+.mid .chat-app .app .content .message-box .message2 div:first-child {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mid .chat-app .app .content .message-box .message2 div:first-child img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.mid .chat-app .app .content .message-box .message2 div:nth-child(2) {
+  height: 25%;
+}
+
+.mid .chat-app .app .content .message-box .message2 div:last-child {
+  height: 17%;
+  width: 66%;
+  -webkit-transform: translateX(47px);
+          transform: translateX(47px);
+}
+
+.mid .chat-app .app .content .message-box .message3 {
+  width: 80%;
+  height: 30%;
+  margin-top: .35rem;
+}
+
+.mid .chat-app .app .content .message-box .message3 div {
+  height: 36%;
+  margin-bottom: .5rem;
+  padding: .23rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #9241c826;
+  -webkit-box-shadow: 2px 4px 15px -14px;
+          box-shadow: 2px 4px 15px -14px;
+  color: white;
+}
+
+.mid .chat-app .app .content .message-box .message3 div:first-child {
+  color: #ad6ecd;
+  width: 85%;
+}
+
+.mid .chat-app .app .content .message-box .message3 div:nth-child(2), .mid .chat-app .app .content .message-box .message3 div:last-child {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, violet), color-stop(118%, blue));
+  background-image: linear-gradient(to right, violet 15%, blue 118%);
+  cursor: pointer;
+}
+
+.mid .chat-app .app .content .message-box .message3 div:nth-child(2) p, .mid .chat-app .app .content .message-box .message3 div:last-child p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mid .chat-app .app .content .message-box .message3 div:nth-child(2) p input, .mid .chat-app .app .content .message-box .message3 div:last-child p input {
+  margin-right: 10px;
+}
+
+.mid .chat-app .app .content .message-box .message-feild {
+  -webkit-transform: translate(10% 10%);
+          transform: translate(10% 10%);
+}
+
+.mid .chat-app .app .content .message-feild {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mid .chat-app .app .content .message-feild input {
+  border-radius: 20px;
+  padding: 1rem;
+  border: none;
+  height: 35px;
+  width: 95%;
+}
+
+.mid .app-info {
+  width: 50%;
+  height: 100%;
+  display: block;
+  padding-top: 12rem;
+  padding-left: 2rem;
+  font-family: 'overpass';
+}
+
+.mid .app-info p {
+  width: 85%;
+  margin-top: 1.5rem;
+  padding: .5rem 0rem;
+  line-height: 1.4rem;
+}
+/*# sourceMappingURL=stlye.css.map */
