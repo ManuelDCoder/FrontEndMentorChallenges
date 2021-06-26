@@ -1,0 +1,63 @@
+@mixin desktop {
+    @media (min-width: 1024px ) and (max-width: $desktop) {
+        .sub-container {
+            height: 50% !important;
+            width: 1440px !important;
+            background-position: 60rem -2rem !important;
+
+
+
+            .header {
+                padding: 0;
+                width: 25%;
+                transform: translateY(-35px);
+            }
+
+            .flyers {
+                position: relative;
+                flex-direction: row !important;
+                width: 100%;
+                height: 80%;
+                // margin-bottom: 15rem;
+               
+                    div {
+                        width: 30%;
+                        margin: 0 !important;
+
+                            &:first-child {
+                                transform: translateX(-10rem);
+                            }
+                            &:nth-child(2) {
+                                position: absolute;
+                                height: 110%;
+                            }
+                            &:last-child {
+                                transform: translateX(10rem);
+                            }
+                    }
+                        
+
+                    .basic , .master {
+                        z-index: 1;
+                    }
+    
+                    .pro {
+                        z-index: 2;
+                    }
+                    
+            }
+    
+        }
+
+        .bg {
+            width: 100%;
+            height: 50vh;
+            z-index: 0;
+            transform: translateY(-161px);
+            background-image: url(../images/bg-bottom.svg);
+            background-repeat: no-repeat;
+        }
+        
+
+    }
+}

@@ -1,0 +1,29 @@
+// Layout
+    // Mobile
+        $mobile: 375px;
+    // Desktop
+        $desktop: 1440px;
+// Layout
+
+// Gradients
+    $linearGradientx: hsl(236, 72%, 79%);
+    $linearGradienty: hsl(237, 63%, 64%);
+// Gradient
+
+// Color
+
+    $veryLightGrayishBlue: hsl(240, 78%, 98%);
+    $LightGrayishBlue: hsl(234, 14%, 74%);
+    $GrayishBlue: hsl(233, 13%, 49%);
+    $DarkGrayishBlue: hsl(232, 13%, 33%);
+
+
+// Color
+
+// Font
+    $font: 0.9375; // body font
+    @font-face {
+        font-family: 'monserat';
+        src: url(../fonts/Montserrat-Bold.ttf);
+    }
+// Font

@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'monserat';
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+#container {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #f6f6fe;
+  font-family: 'monserat';
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  #container .sub-container {
+    height: 50% !important;
+    width: 1440px !important;
+    background-position: 60rem -2rem !important;
+  }
+  #container .sub-container .header {
+    padding: 0;
+    width: 25%;
+    -webkit-transform: translateY(-35px);
+            transform: translateY(-35px);
+  }
+  #container .sub-container .flyers {
+    position: relative;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    width: 100%;
+    height: 80%;
+  }
+  #container .sub-container .flyers div {
+    width: 30%;
+    margin: 0 !important;
+  }
+  #container .sub-container .flyers div:first-child {
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  #container .sub-container .flyers div:nth-child(2) {
+    position: absolute;
+    height: 110%;
+  }
+  #container .sub-container .flyers div:last-child {
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  #container .sub-container .flyers .basic, #container .sub-container .flyers .master {
+    z-index: 1;
+  }
+  #container .sub-container .flyers .pro {
+    z-index: 2;
+  }
+  #container .bg {
+    width: 100%;
+    height: 50vh;
+    z-index: 0;
+    -webkit-transform: translateY(-161px);
+            transform: translateY(-161px);
+    background-image: url(../images/bg-bottom.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+#container .sub-container {
+  width: 100%;
+  height: 1750px;
+  padding: 0;
+  background-image: url(../images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-size: 24.5rem;
+  background-position: 13rem -2rem;
+}
+
+#container .sub-container .flyers {
+  width: 100%;
+  height: 82%;
+}
+
+#container .sub-container #price2 {
+  display: none;
+}
+
+#container .sub-container .open #price {
+  display: none;
+}
+
+#container .sub-container .open #price2 {
+  display: block;
+}
+
+.header {
+  height: 252px;
+  width: 100%;
+  padding: 4.0625rem 3.75rem;
+}
+
+.header .header-info {
+  font-size: 1.4375rem;
+  margin-bottom: 2.25rem;
+}
+
+.header .header-info-2 {
+  font-size: 0.9375;
+  width: 100%;
+}
+
+.header .header-info-2 .slider {
+  width: 25%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+
+.header .header-info-2 input[type="checkbox"] {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: inset 0 0 2px white;
+          box-shadow: inset 0 0 2px white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+}
+
+.header .header-info-2 input:checked[type="checkbox"] {
+  background-image: -webkit-gradient(linear, right top, left top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to left, #a3a8f0, #696fdd);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header .header-info-2 input[type="checkbox"]::before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: white;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 0px 0px 3px 0px;
+          box-shadow: 0px 0px 3px 0px;
+}
+
+.header .header-info-2 input:checked[type="checkbox"]::before {
+  left: 50%;
+}
+
+.basic {
+  width: 328px;
+  height: 458px;
+  padding: 1.9375rem;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 3.8125rem;
+  margin-bottom: 3.8125rem;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.basic #price, .basic #price2 {
+  font-size: 3.5rem;
+}
+
+.basic input {
+  margin-top: 1rem;
+  padding: .5rem 5.4rem;
+  font-size: .758rem;
+  border: 1px solid white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+}
+
+.basic input:hover {
+  background: white;
+  color: #696fdd;
+}
+
+.pro {
+  width: 328px;
+  height: 458px;
+  padding: 1.9375rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
+  border-radius: 10px;
+  color: white;
+  overflow: hidden;
+  margin-bottom: 3.8125rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.pro #pro-price, .pro #pro-price-month {
+  font-size: 3.5rem;
+}
+
+.pro #pro-price-month {
+  display: none;
+}
+
+.pro input {
+  margin-top: 1rem;
+  padding: .5rem 5.4rem;
+  font-size: .758rem;
+  color: #696fdd;
+  border: 1px solid #696fdd;
+  background-color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.pro input:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.master {
+  width: 328px;
+  height: 458px;
+  padding: 1.9375rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.master #master-price, .master #master-price-month {
+  font-size: 3.5rem;
+}
+
+.master #master-price-month {
+  display: none;
+}
+
+.master input {
+  margin-top: 1rem;
+  padding: .5rem 5.4rem;
+  font-size: .758rem;
+  border: 1px solid white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.master input:hover {
+  background: white;
+  color: #696fdd;
+}
+/*# sourceMappingURL=style.css.map */

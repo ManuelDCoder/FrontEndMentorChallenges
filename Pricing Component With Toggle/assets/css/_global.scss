@@ -1,0 +1,42 @@
+#container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: $veryLightGrayishBlue;
+    font-family: 'monserat';
+    // font-size: $font;
+
+    @include desktop;
+
+        .sub-container {
+            width: 100%;
+            height: 1750px;
+            padding: 0;
+            background-image: url(../images/bg-top.svg);
+            background-repeat: no-repeat;
+            background-size: 24.5rem;
+            background-position: 13rem -2rem;
+
+            .flyers {
+                width: 100%;
+                height: 82%;
+    
+            }
+
+            #price2 {
+                display: none;
+            }
+           .open {
+               #price {
+                   display: none;
+               }
+
+               #price2 {
+                   display: block;
+               }
+           }
+
+        }
+        
+}
