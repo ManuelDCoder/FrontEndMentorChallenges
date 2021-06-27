@@ -291,7 +291,7 @@
 
 @mixin phoneSmall {
 
-    @media (min-width: $mobileScreenSmall ) and (max-width: $mobileScreenLarge + 3px){ 
+    @media (min-width: $mobileScreenSmall ) and (max-width: $mobileScreenLarge){ 
        
         #hero {
             height: 90vh !important;
