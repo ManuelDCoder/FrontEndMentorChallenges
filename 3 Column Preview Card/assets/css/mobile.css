@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media  (max-width: 425px) {
 
     body {
         /* min-width: 1000px; */
@@ -6,8 +6,9 @@
 
     #column-card {
         /* border: 1px solid black; */
-        width: 500px;
-        height: 250vh;
+        width: 100%;
+        margin: 2rem 0;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,6 +18,7 @@
         /* border: 1px solid blue; */
         width: 375px;
         height: 95%;
+        padding: 0 1rem;
         display: block !important;
         align-items: center;
         justify-content: center;
