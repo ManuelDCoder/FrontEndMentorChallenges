@@ -246,7 +246,7 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 427px) {
+@media (min-width: 320px) and (max-width: 428px) {
   #hero {
     height: 90vh !important;
     border-bottom-left-radius: 60px;
