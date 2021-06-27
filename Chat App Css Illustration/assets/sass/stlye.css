@@ -56,6 +56,7 @@
 }
 
 .mid .chat-app {
+  position: relative;
   width: 50%;
   height: 100%;
 }
@@ -202,9 +203,71 @@
   color: violet;
 }
 
+.mid .chat-app .app .content .header .info .mobile-menu {
+  position: absolute;
+  width: 15%;
+  height: 20%;
+  right: 20%;
+  top: 15%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'overpass';
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  font-size: .835rem;
+  padding: .5rem;
+  background: #ad6ecdbd;
+  display: none;
+  opacity: 0;
+}
+
+.mid .chat-app .app .content .header .info .mobile-menu p {
+  overflow: hidden;
+  width: 72%;
+  margin-bottom: .25rem;
+}
+
+.mid .chat-app .app .content .header .info .mobile-menu p:hover {
+  border-bottom: 1px solid #ad6ecd;
+}
+
+.mid .chat-app .app .content .header .info .mobile-menu .open {
+  display: block;
+  opacity: 1;
+}
+
 .mid .chat-app .app .content .header .info .menu {
   width: 10%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.mid .chat-app .app .content .header .info .menu a {
+  width: 100%;
+  height: 100%;
+  margin-top: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,15 +281,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.mid .chat-app .app .content .header .info .menu div {
+.mid .chat-app .app .content .header .info .menu a div {
   width: 14%;
   height: 6%;
-  margin-top: 3px;
   background-color: white;
   border-radius: 50%;
+  margin-top: 3px;
 }
 
 .mid .chat-app .app .content .message-box {

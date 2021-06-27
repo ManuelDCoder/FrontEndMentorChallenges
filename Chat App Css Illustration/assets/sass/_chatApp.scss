@@ -10,6 +10,7 @@
     // border: 1px solid black;
 
         .chat-app {
+            position: relative;
             // border: 1px solid black;
             width: 50%;
             height: 100%;
@@ -139,24 +140,76 @@
                                                             color: violet;
                                                         }
                                                 }
+                                                .mobile-menu {
+                                                    position: absolute;
+                                                    width: 15%;
+                                                    height: 20%;
+                                                    right: 20%;
+                                                    top: 15%;
+                                                    color: white;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    font-family: 'overpass'; 
+                                                    border-radius: 5px;
+                                                    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                                                    font-size: .835rem;
+                                                    padding: .5rem;
+                                                    background: #ad6ecdbd;
+                                                    display: none;
+                                                    opacity: 0;
 
+
+                                                    
+                                                         p {
+                                                            overflow: hidden;
+                                                            width: 72%;
+                                                            margin-bottom: .25rem
+                                                            ;
+
+                                                                &:hover {
+
+                                                                    border-bottom: 1px solid #ad6ecd;
+                                                                    
+                                                                }
+                                                         }
+
+                                                         .open {
+                                                             display: block;
+                                                             opacity: 1;
+                                                         }
+                                                }
                                                 .menu {
                                                     // border: 1px solid black;
                                                     width: 10%;
                                                     height: 100%;
                                                     display: flex;
-                                                    flex-direction: column;
                                                     justify-content: center;
                                                     align-items: center;
                                                     cursor: pointer;
 
-                                                        div {
-                                                            width: 14%;
-                                                            height: 6%;
+                                                        a {
+                                                            width: 100%;
+                                                            height: 100%;
                                                             margin-top: 3px;
-                                                            background-color: white;
-                                                            border-radius: 50%;
-                                                            // margin: .rem;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            text-decoration: none;
+                                                            // border: 1px solid black;
+
+
+                                                            div {
+                                                                width: 14%;
+                                                                height: 6%;
+                                                                background-color: white;
+                                                                border-radius: 50%;
+                                                                margin-top: 3px;
+
+                                                                // margin: .rem;
+                                                            }
                                                         }
                                                 }
                                         }
